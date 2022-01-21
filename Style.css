@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-img {
+  position: relative;
+}
+.main-img div {
+  position: absolute;
+  top: 0;
+  background-color: hsl(178, 100%, 50%, 60%);
+  width: 100%;
+  height: calc(100% - 4px);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 10px;
+
+}
+.main-img div:hover {
+opacity: 1;
+cursor: pointer;
+}
+
+
+
+.main-img div img {
+  position: absolute;
+  left: 44%;
+  top: 43%;
+}
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 60%);
+  padding: 1.25%;
+
+}
+p {
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+.containter {
+
+  padding: 1.5rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 10px;
+}
+
+.containter h2 {
+font-weight: 600;
+  color: White;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.containter ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0 2rem 0;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.containter ul li {
+  display: flex;
+  align-items: center;
+color:hsl(215, 51%, 70%);
+}
+.containter ul li img {
+  padding-right: .25rem;
+}
+.containter ul li:first-child {
+  color: cyan;
+}
+
+}
+
+
+.profile {
+  color: white;
+  font-weight: 400;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-top: 2rem;
+
+}
+.avatar img {
+  width: 3.5rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right: 2.5rem;
+}
+
+.avatar p span {
+  color: white;
+  font-weight: 400;
+}
+
+
+h2:hover {
+  color: cyan;
+  cursor: pointer;
+}
+
+
+p span:hover {
+  color: cyan;
+  cursor: pointer;
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
+
+@media (min-width: 500px) {
+  .containter {
+    width: 450px;
+    margin: auto;
+    padding: 1.25rem;
+  }
+}
